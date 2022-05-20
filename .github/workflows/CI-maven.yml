@@ -60,4 +60,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAMEE }}/zish-private:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/zish-private:latest
