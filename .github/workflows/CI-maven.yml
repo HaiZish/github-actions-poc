@@ -4,6 +4,12 @@
 name: Java CI with Maven
 
 on:
+  workflow_dispatch :
+    inputs:
+      tags:
+        description: 'Test scenario tags (Optional)'
+        required: false 
+        type: boolean
   push:
     branches: [ main ]
   pull_request:
