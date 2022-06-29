@@ -36,7 +36,7 @@ jobs:
       run: |
         echo "Hi this is Zish here!"
         echo "***************Printing list of files & folders here*****************"
-        ls -lart
+        ls -lart .target/
         echo "**********************************************************************"
       
     -
