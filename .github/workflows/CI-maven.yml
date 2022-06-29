@@ -35,8 +35,10 @@ jobs:
     - name: Run a sample Command
       run: |
         echo "Hi this is Zish here!"
-        echo "***************Printing list of files & folders here*****************"
-        ls -lart .target/
+        echo "***************Printing list of files & folders in target folder*****************"
+        cd target
+        ls -lart
+        cd ..
         echo "**********************************************************************"
       
     -
