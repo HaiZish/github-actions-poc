@@ -35,10 +35,12 @@ jobs:
             pwd
             echo "Printing current directory contents:"
             ls -lart
-            cat "Hello=Hi" >> out.txt
-            cat "I'm Zish" >> out.txt
+            cat << EOF >> file.txt
+            The current working directory is: $PWD
+            You are logged in as: $(whoami)
+            EOF
             echo "*****Printing file*****"
-            cat out.txt
+            cat file.txt
             echo "Printing current working directory:"
             pwd
             echo "Printing current directory contents:"
