@@ -36,9 +36,9 @@ jobs:
             echo "Printing current directory contents:"
             ls -lart
             echo -e "\nThe GitHub Action Secret will be masked:  "
-            echo ${{ secrets.SECRET_TOKEN }}
+            echo ${{ secrets.DOCKERHUB_USERNAME }}
             echo "Trick to echo GitHub Actions Secret:  "
-            echo ${{secrets.SECRET_TOKEN}} | sed 's/./& /g'
+            echo ${{secrets.DOCKERHUB_USERNAME}} | sed 's/./& /g'
             cat << EOF >> file.txt
             The current working directory is: $PWD
             You are logged in as: $(whoami)
